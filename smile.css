@@ -1,0 +1,57 @@
+:root{
+    --color-bg: slategray;
+    --color-head: yellow;
+    --color-eye: black;
+    --color-mouth: black;
+    --eye-offset: 32px;
+}
+
+body {
+    background-color: var(--color-bg);
+    
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    position: relative;
+    background-color: var(--color-head);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.eye {
+    position: absolute;
+    background-color: var(--color-eye);
+    border-radius: 50%;
+    top: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.left {
+    left: var(--eye-offset);
+}
+
+.right{
+    right: var(--eye-offset);
+}
+
+.mouth {
+    width: 150px;
+    height: 20px;
+    border-width: 0 10px 10px 10px;
+    border-color: var(--color-mouth);
+    border-style: solid;
+    position: absolute;
+    top: 125px;
+    left: 100px;
+    transform: translate(-50%, 0);
+    border-radius: 0% 0% 299px 299px;
+}
